@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>freshwater</artifactId>
+        <groupId>com.freshwater</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>freshwater-web</artifactId>
+
+    <packaging>pom</packaging>
+
+    <description> Web 页面渲染微服务父工程 </description>
+
+    <modules>
+        <module>freshwater-web-item</module>
+        <module>freshwater-web-search</module>
+    </modules>
+</project>

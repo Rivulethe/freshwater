@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>freshwater</artifactId>
+        <groupId>com.freshwater</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>freshwater-service</artifactId>
+
+    <packaging>pom</packaging>
+
+    <description> 商城各大微服务父工程 </description>
+    <modules>
+        <module>freshwater-service-canal</module>
+        <module>freshwater-service-content</module>
+        <module>freshwater-service-file</module>
+        <module>freshwater-service-goods</module>
+        <module>freshwater-service-order</module>
+        <module>freshwater-service-pay</module>
+        <module>freshwater-service-search</module>
+        <module>freshwater-service-seckill</module>
+        <module>freshwater-service-user</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.freshwater</groupId>
+            <artifactId>freshwater-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.freshwater</groupId>
+            <artifactId>freshwater-common-db</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -1,0 +1,15 @@
+server:
+  port: 11101
+spring:
+  application:
+    name: eureka
+  profiles:
+    active: dev
+eureka:
+  client:
+    # 是否将自己注册
+    register-with-eureka: false
+    # 是否从 Eureka 中获取信息
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
